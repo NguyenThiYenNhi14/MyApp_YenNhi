@@ -1,0 +1,26 @@
+<p>ptb1 works!</p>
+<table>
+    <tr>
+        <td>a:</td>
+        <td>
+            <input type="text" #hsa>
+        </td>
+    </tr>
+    <tr>
+        <td>b:</td>
+        <td><input type="text" #hsb></td>
+    </tr>
+    <tr>
+        <td>Result:</td>
+        <td #result></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button (click)="get_solution(hsa,hsb,result)">Solution</button>
+            &nbsp;&nbsp;&nbsp;
+            <!--khi nhan vao clear thi xoa toan bo du lieu tren giao dien, va focus toi o he so a
+            yeu cau dung binding even-->
+            <button>Clear</button>
+        </td>
+    </tr>
+</table>
