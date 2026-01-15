@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Learndirecrive } from './learndirecrive';
+import { CustomerDetails } from './customer-details';
 
-describe('Learndirecrive', () => {
-  let component: Learndirecrive;
-  let fixture: ComponentFixture<Learndirecrive>;
+describe('CustumerDetails', () => {
+  let component: CustomerDetails;
+  let fixture: ComponentFixture<CustomerDetails>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Learndirecrive]
+      imports: [CustomerDetails]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Learndirecrive);
+    fixture = TestBed.createComponent(CustomerDetails);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

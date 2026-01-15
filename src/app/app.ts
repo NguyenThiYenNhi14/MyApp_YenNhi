@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { About } from './about/about';
-import { Contact } from './contact/contact';
-import { Learnbinding } from './learnbinding/learnbinding';
-import { Ptb1 } from './ptb1/ptb1';
-import { FormsModule } from '@angular/forms';
-import { Ptb2 } from './ptb2/ptb2';
-import { Learndirecrive } from './learndirecrive/learndirecrive';
+import { Listcustomer } from './listcustomer/listcustomer';
+import { CustomerDetails } from './customer-details/customer-details';
+import { ListCustomer2 } from './listcustomer2/listcustomer2';
+import { Listcustomer3 } from './listcustomer3/listcustomer3';
+import { HttpClientModule } from '@angular/common/http';
+import { Ex14 } from './ex14/ex14';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, About, Contact, Learnbinding, Ptb1, FormsModule, Ptb2, Learndirecrive],
+  standalone: true,
+  imports: [RouterOutlet, Listcustomer, CustomerDetails, ListCustomer2, Listcustomer3,HttpClientModule, Ex14],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
