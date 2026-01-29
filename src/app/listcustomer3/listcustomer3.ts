@@ -18,7 +18,7 @@ export class Listcustomer3 {
     {
       this.arr_ages[i-20]=i
     }
-    this.do_filter(20,60)
+    this.do_filter(20,100)
   }
   do_filter(fromAge:any,toAge:any)
   {
