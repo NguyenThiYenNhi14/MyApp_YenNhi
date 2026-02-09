@@ -17,6 +17,8 @@ import { Ex19 } from './ex19/ex19';
 import { Product19 } from './product19/product19';
 import { ListProduct19 } from './list-product19/list-product19';
 import { Serviceproduct19 } from './serviceproduct19/serviceproduct19';
+import { BookDetailComponent } from './book-detail-component/book-detail-component';
+import { Component } from '@angular/core';
 
 
 export const routes: Routes = [
@@ -37,5 +39,11 @@ export const routes: Routes = [
     {path:"product19",component:Product19},
     {path:"list-product19",component:ListProduct19},
     {path:"service-product19",component:Serviceproduct19},
+    {path:"ex41", component: BookDetailComponent},
+    {path:"ex41/:id", component: BookDetailComponent},
+    { 
+  path: 'ex50',
+  loadChildren: () =>
+    import('./ex50/ex50-module').then(m => m.Ex50Module)},
     {path:"**",component:NotFound}
 ];
